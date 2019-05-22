@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "packageName": "com.broken1.broken1",
+    "packageFolder": "com/broken1/broken1",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "serviceDiscoveryType": false,
+    "skipClient": true,
+    "testFrameworks": [],
+    "websocket": false,
+    "baseName": "broken1",
+    "applicationType": "microservice",
+    "buildTool": "maven",
+    "serverPort": "8080",
+    "skipUserManagement": true,
+    "jhipsterVersion": "5.8.2",
+    "clientPackageManager": "npm",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "jwtSecretKey": "MjA3ZmRkZjRmM2NjMWYzNWU2NDc3MGZjODczNzQwMTQ3Zjc4ZDI1ZjA1NmVkNTdlNGQxMGIzZDVjNGYwYzU2YzU0NGJiZmFkNjcwMjY2OTVjODA1NjIyZTg4Y2E0NmE4ZDBlOTZmMmQ0OWVjMzk1NGVkNTY4ODIyZGMyOTk0OTY=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "entities": [
+    "Employee"
+  ]
+}

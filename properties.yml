@@ -1,0 +1,5 @@
+APP_NAME: 'broken'
+MS_NAME: 'broken1'
+BRANCH: 'master'
+GIT_SOURCE_URL: 'https://github.com/rajeshdeshpande0/broken1.git'
+SONAR_HOST_URL: 'http://sonarqube-broken-devops.40.71.221.144.nip.io'
