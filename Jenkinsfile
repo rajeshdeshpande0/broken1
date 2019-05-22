@@ -17,7 +17,7 @@ def firstTimeDevDeployment(projectName,msName){
             def bcExists = bcSelector.exists()
             if (!bcExists) {
                 openshift.newApp("redhat-openjdk18-openshift:1.1~${GIT_SOURCE_URL}","--strategy=source")
-                sh 'sleep 620'
+                sh 'sleep 400'
                 openshiftTag(namespace: projectName, srcStream: msName, srcTag: 'latest', destStream: msName, destTag: 'test-apps')
                 openshiftTag(namespace: projectName, srcStream: msName, srcTag: 'latest', destStream: msName, destTag: 'prod-apps')
             } else {
@@ -91,8 +91,8 @@ node
    stage('First Time Deployment'){
         readProperties()
         firstTimeDevDeployment("${APP_NAME}-dev-apps", "${MS_NAME}")
-        firstTimeTestDeployment("${APP_NAME}-dev-apps", "${APP_NAME}-test", "${MS_NAME}")
-        firstTimeProdDeployment("${APP_NAME}-dev-apps", "${APP_NAME}-prod", "${MS_NAME}")
+        firstTimeTestDeployment("${APP_NAME}-dev-apps", "${APP_NAME}-test-apps", "${MS_NAME}")
+        firstTimeProdDeployment("${APP_NAME}-dev-apps", "${APP_NAME}-prod-apps", "${MS_NAME}")
    }
    
    stage('Checkout')
